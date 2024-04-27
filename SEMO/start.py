@@ -947,38 +947,6 @@ async def pipong(client: Client, message: Message):
 
 
 
-@Client.on_message(filters.command(["ميوزك", "اوامر", "الاوامر"]))
-async def starhelp(client: Client, message: Message):
-    usr = await client.get_users(OWNER_ID)
-    name = usr.first_name
-    usrnam = usr.username
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/5d5218d8cf4afd2c3e90c.jpg",
-        caption=f"""مرحبا بك عزيزي في اوامر بوت الميوزك 🎸 ⋅\n- اسمك : {message.from_user.mention} 💘 ⋅\n- عليك استخدام الازرار بالاسفل لتصفح اوامر الميوزك 🎸 ⋅ \n\n• ⌯ 𝐃𝐄𝐕.𝐒𝐎𝐔𝐑𝐂𝐄.𝑴𝒆𝑫𝒐𝑶 ⌯ • </b>""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "• ⌯ اوامر التشغيل ⌯ •", callback_data="bbasic"),
-                ],[
-                    InlineKeyboardButton(
-                        "• ⌯ اوامر الادمن ⌯ •", callback_data="badmin"),
-                ],[
-                    InlineKeyboardButton(
-                        "• ⌯ اوامر المطور ⌯ •", callback_data="bsudo"),
-                ],[
-                    InlineKeyboardButton(name, url=f"https://t.me/{usrnam}"),
-                ],[
-                    InlineKeyboardButton(
-                        "𝙲𝙷.𝚂𝙾𝚄𝚁𝙲𝙴.𝙼𝚎𝙳𝚘𝙾", url="https://t.me/V_l_B2"),
-                ],
-            ]
-        ),
-    )
-
-
-
-
 
              ##        ##    #####     #####      
              # #      # #    #          #     #          #   # #   #
