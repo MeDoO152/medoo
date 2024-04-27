@@ -267,7 +267,7 @@ async def start(client, message):
 ["حروف","بوت"],
 ["قران الكريم","استوري قران"],
 ["رمزيات بنات","المزيد من الصور"]], resize_keyboard=True)
-  await message.reply_text("**🎸 اهلا بك ، عزيزي العضو السكر  💎 .**", reply_markup=kep,quote=True)
+  await message.reply_text("**صلي علي النبي وتبسم ♥️✨**", reply_markup=kep,quote=True)
   username = client.me.username
   if os.path.isfile(f"{username}.png"):
     photo = f"{username}.png"
