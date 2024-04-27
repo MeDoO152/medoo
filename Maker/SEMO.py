@@ -252,23 +252,6 @@ async def caesar(client: Client, message):
         reply_markup=keyboard,
     ) 
 
-@Client.on_message(filters.command(["☆ حول السورس ☆"])
-  async def bkouqw(client: Client, message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/5d5218d8cf4afd2c3e90c.jpg",
-        caption=f"""**اهلا بك عزيزي{message.from_user.mention}في سورس ميدو\n★᚜ اسم السورس : ميدو\n★᚜ نوع : ميوزك\n★᚜ اللغه : اللغه العربيه ويدعم الانجليزيه \n★᚜ مجال العمل : مصنع بوتات ميوزك\n★᚜ نظام التشغيل : سورس \n★᚜ الاصدار 2.0.2.4\n★᚜ تاريخ التأسيس : 2019/10/19\n★᚜ مؤسس ميدو : 𝑴𝒆𝑫𝒐𝑶""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "𝑆𝑜𝑈𝑟𝐶𝑒 𝑀𝑒𝐷𝑜𝑂", url=f"https://t.me/V_l_B2"), 
-                 ],[
-                 InlineKeyboardButton(
-                        "𝐺𝑟𝑂𝑢𝑃", url=f"https://t.me/V_l_B2"), 
-               ],
-          ]
-        ),
-    )
 
 
 
