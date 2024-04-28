@@ -256,17 +256,13 @@ async def caesar(client: Client, message):
                        
 @Client.on_message(filters.command(["☆ حول السورس ☆"], ""))
 async def cjosar(client: Client, message):
-    reply_markup=InlineKeyboardMarkup(
+    keyboard = InlineKeyboardMarkup(
+        [
             [
-                [
-                    InlineKeyboardButton(
-                        "𝑆𝑜𝑈𝑟𝐶𝑒 𝑀𝑒𝐷𝑜𝑂", url=f"https://t.me/V_l_B2"), 
-                 ],[
-                 InlineKeyboardButton(
-                        "𝐺𝑟𝑂𝑢𝑃", url=f"https://t.me/V_l_B3"), 
-               ],
-          ]
-        ),
+                InlineKeyboardButton("ᯓ 𓆩 ˹ℳℯ𝒟ℴ𝒪˼ 𓆪", url=f"https://t.me/V_l_B0"),
+                InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴️", url=f"https://t.me/V_l_B2"),
+            ],
+        ]
     )
 
     await message.reply_photo(
