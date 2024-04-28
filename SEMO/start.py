@@ -1040,10 +1040,8 @@ async def huhh(client: Client, message):
                         ".💘اضف البوت اللي مجموعتك", url=f"https://t.me/{app.username}?startgroup=true"),
                 ],
 
-            ]
-
-        ),
-
+            ] 
+	    
     )
 
  await message.reply_photo(
