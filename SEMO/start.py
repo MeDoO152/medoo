@@ -1024,7 +1024,7 @@ async def dev(client: Client, message: Message):
      
 
   @Client.on_message(filters.command(["سورس","✪ السورس ✪","السورس"], "")) 
-async def cgddar(client: Client, message: Message):
+async def cgddar(client: Client, message):
     keyboard = InlineKeyboardMarkup(
         [
             [
