@@ -1021,31 +1021,6 @@ async def dev(client: Client, message: Message):
         pass
           
 
-     
-
-  @Client.on_message(filters.command(["سورس","✪ السورس ✪","السورس"], "")) 
-async def cgddar(client: Client, message):
-    keyboard = InlineKeyboardMarkup(
-        [
-            [
-                InlineKeyboardButton("ᯓ 𓆩 ˹ℳℯ𝒟ℴ𝒪˼ 𓆪 #1", url=f"https://t.me/V_l_B0"),
-                InlineKeyboardButton("𝚂𝙾𝚄𝚁𝙲𝙴️", url=f"https://t.me/V_l_B2"),
-            ],
-        ]
-    )
-
-    await message.reply_photo(
-        photo="https://telegra.ph/file/5d5218d8cf4afd2c3e90c.jpg",
-        caption=f"""╭──── • ◈ • ────╮
-么 [᥉᥆υᖇᥴᥱ 𝙼𝚎𝙳𝚘𝙾](t.me/V_l_B2)
-么 [ժᥱ᥎ 𝙼𝚎𝙳𝚘𝙾](t.me/V_l_B0)
-么 [ ᥉υρρ᥆ᖇƚ ](t.me/V_l_B2)
-╰──── • ◈ • ────╯\n\n⍟ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼""",
-        reply_markup=keyboard,
-    ) 
-
-
-
 
 @Client.on_message(filters.command("✪ تعين اسم البوت ✪", ""))
 async def set_bot(client: Client, message):
