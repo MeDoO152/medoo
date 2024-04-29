@@ -1025,7 +1025,7 @@ async def dev(client: Client, message: Message):
      
   @Client.on_message(filters.command(["سورس","✪ السورس ✪","السورس"], "")) 
 async def huhh(client: Client, message):
-    eply_markup=InlineKeyboardMarkup(
+        keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
@@ -1041,7 +1041,7 @@ async def huhh(client: Client, message):
                 ],
 
             ] 
-	    
+    
     )
 
  await message.reply_photo(
