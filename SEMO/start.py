@@ -1019,30 +1019,27 @@ async def dev(client: Client, message: Message):
        os.remove(photo)
      except:
         pass
- 
-             
+          
 
      
   @Client.on_message(filters.command(["سورس","✪ السورس ✪","السورس"], "")) 
 async def huhh(client: Client, message):
-        keyboard = InlineKeyboardMarkup(
+        
+    keyboard = InlineKeyboardMarkup(
+        [
             [
-                [
-                    InlineKeyboardButton(
-                        "𝙶𝚁𝙾𝚄𝙿", url=f"https://t.me/V_l_B3"), 
-                    InlineKeyboardButton(
-                        "𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/V_l_B2"),
-                  ],[
-                    InlineKeyboardButton(
-                        "𝙼𝚎𝙳𝚘𝙾", url=f"https://t.me/V_l_B0"),
-                  ],[
-                    InlineKeyboardButton(
-                        ".💘اضف البوت اللي مجموعتك", url=f"https://t.me/{app.username}?startgroup=true"),
-                ],
-
-            ] 
-    
+               InlineKeyboardButton("𝙶𝚁𝙾𝚄𝙿", url=f"https://t.me/V_l_B3"), 
+                InlineKeyboardButton( "𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url=f"https://t.me/V_l_B2"),
+            ],
+            [
+                 InlineKeyboardButton("𝙼𝚎𝙳𝚘𝙾", url=f"https://t.me/V_l_B0"),
+            ],
+            [ 
+                 InlineKeyboardButton("اضف البوت الي مجموعتك ❤️", url="https://t.me/{app.username}?startgroup=true")
+            ]
+        ]
     )
+
 
  await message.reply_photo(
         photo="https://telegra.ph/file/5d5218d8cf4afd2c3e90c.jpg",
